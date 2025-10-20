@@ -69,24 +69,6 @@ portfolio_up/
 - FAQ section
 - Availability status
 
-## 🚀 Getting Started
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/mitra9917/portfolio_up.git
-   cd portfolio_up
-   ```
-
-2. **Open in browser**
-   - Simply open `index.html` in your web browser
-   - Or use a local server for development
-
-3. **Customize**
-   - Update personal information in HTML files
-   - Modify colors and styles in `styles.css`
-   - Add your own projects and skills
-   - Update contact information
-
 ## 📱 Responsive Design
 
 The portfolio is fully responsive and optimized for:
@@ -116,27 +98,10 @@ The portfolio is fully responsive and optimized for:
 - Fast loading times
 - Efficient CSS and JavaScript
 
-## 🔧 Customization
-
-### Colors
-Update the color scheme by modifying Tailwind classes in the HTML files or create custom CSS variables in `styles.css`.
-
-### Content
-- Replace placeholder content with your own information
-- Update project details and links
-- Modify skills and technologies
-- Customize contact information
-
-### Styling
-- Modify `styles.css` for custom animations and effects
-- Update Tailwind configuration for custom utilities
-- Add new sections or pages as needed
-
 ## 📧 Contact
 
-- **Email**: shubham.mitra@example.com
-- **Phone**: +1 (555) 123-4567
-- **Location**: Your City, Country
+- **Email**: work.shubham.dev@gmail.com
+- **Location**: Chennai, India
 - **GitHub**: [@mitra9917](https://github.com/mitra9917)
 
 ## 📄 License
