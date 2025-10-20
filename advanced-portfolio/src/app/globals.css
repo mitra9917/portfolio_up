@@ -1,0 +1,11 @@
+/* There is no problem with these Tailwind directives.
+   The only thing to note: if Tailwind styles are not working,
+   ensure that:
+   1. Tailwind is installed and configured in your project.
+   2. This file (globals.css) is imported in the main layout or _app file.
+   3. The "content" array in your tailwind.config.js includes the correct paths.
+   4. There are no build errors in the console.
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

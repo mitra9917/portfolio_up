@@ -1,0 +1,18 @@
+portfolio_up/
+├── .git/                    # Git repository
+├── README.md               # Project documentation  
+├── hello.txt               # Simple text file
+└── portfolio/              # Your Next.js portfolio
+    ├── src/
+    │   ├── app/
+    │   │   ├── page.tsx           # Home page
+    │   │   ├── about/page.tsx     # About page
+    │   │   ├── resume/page.tsx    # Resume page
+    │   │   ├── projects/page.tsx  # Projects page
+    │   │   ├── skills/page.tsx    # Skills page
+    │   │   ├── contact/page.tsx   # Contact page
+    │   │   ├── layout.tsx         # Root layout
+    │   │   └── globals.css        # Global styles
+    │   └── components/
+    │       └── Navigation.tsx     # Navigation component
+    └── package.json
