@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Shubham Mitra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-inter bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold text-gray-900">Shubham Mitra</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                        <a href="about.html" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">About</a>
+                        <a href="projects.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Projects</a>
+                        <a href="skills.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Skills</a>
+                        <a href="contact.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 block px-3 py-2 text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-900 block px-3 py-2 text-base font-medium">About</a>
+                <a href="projects.html" class="text-gray-600 hover:text-blue-600 block px-3 py-2 text-base font-medium">Projects</a>
+                <a href="skills.html" class="text-gray-600 hover:text-blue-600 block px-3 py-2 text-base font-medium">Skills</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-600 block px-3 py-2 text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 pb-16 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+                    About <span class="text-blue-600">Me</span>
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Get to know the person behind the code and designs
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Story -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-on-scroll">
+                    <div class="w-80 h-80 mx-auto lg:mx-0 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center mb-8">
+                        <i class="fas fa-user text-white text-6xl"></i>
+                    </div>
+                </div>
+                <div class="animate-on-scroll">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">My Story</h2>
+                    <div class="space-y-4 text-lg text-gray-600">
+                        <p>
+                            Hello! I'm Shubham Mitra, a passionate 2nd year Computer Science student with a deep love for 
+                            creating beautiful, functional web experiences. My journey into the world of technology began 
+                            with curiosity and has evolved into a genuine passion for frontend development and UI/UX design.
+                        </p>
+                        <p>
+                            What started as simple HTML pages has grown into a comprehensive understanding of modern web 
+                            technologies. I believe that great design and clean code go hand in hand, and I'm constantly 
+                            learning new ways to bridge the gap between user needs and technical possibilities.
+                        </p>
+                        <p>
+                            When I'm not coding, you'll find me exploring new design trends, contributing to open-source 
+                            projects, or working on personal projects that challenge my skills and creativity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Experience -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Education & Journey</h2>
+                <p class="text-lg text-gray-600">My academic and learning path</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Education -->
+                <div class="bg-white p-8 rounded-lg shadow-sm hover-lift">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-graduation-cap text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Education</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <h4 class="text-lg font-semibold text-gray-900">Computer Science Student</h4>
+                            <p class="text-gray-600">2nd Year Undergraduate</p>
+                            <p class="text-sm text-gray-500">2023 - Present</p>
+                        </div>
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <h4 class="text-lg font-semibold text-gray-900">Self-Taught Developer</h4>
+                            <p class="text-gray-600">Frontend Development & UI/UX Design</p>
+                            <p class="text-sm text-gray-500">2022 - Present</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="bg-white p-8 rounded-lg shadow-sm hover-lift">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-briefcase text-purple-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Experience</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-purple-500 pl-4">
+                            <h4 class="text-lg font-semibold text-gray-900">Personal Projects</h4>
+                            <p class="text-gray-600">Building responsive web applications</p>
+                            <p class="text-sm text-gray-500">2023 - Present</p>
+                        </div>
+                        <div class="border-l-4 border-orange-500 pl-4">
+                            <h4 class="text-lg font-semibold text-gray-900">UI/UX Design</h4>
+                            <p class="text-gray-600">Creating user-centered designs with Figma</p>
+                            <p class="text-sm text-gray-500">2023 - Present</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Overview -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What I Do</h2>
+                <p class="text-lg text-gray-600">My areas of expertise and interests</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 rounded-lg bg-gray-50 hover-lift">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-code text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Frontend Development</h3>
+                    <p class="text-gray-600 mb-4">Building responsive, interactive web applications using modern technologies like React, JavaScript, and Tailwind CSS.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• React & JavaScript</li>
+                        <li>• HTML5 & CSS3</li>
+                        <li>• Tailwind CSS</li>
+                        <li>• Responsive Design</li>
+                    </ul>
+                </div>
+                
+                <div class="text-center p-6 rounded-lg bg-gray-50 hover-lift">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-purple-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-palette text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">UI/UX Design</h3>
+                    <p class="text-gray-600 mb-4">Creating intuitive and beautiful user experiences through thoughtful design and user research.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Figma Design</li>
+                        <li>• User Research</li>
+                        <li>• Wireframing</li>
+                        <li>• Prototyping</li>
+                    </ul>
+                </div>
+                
+                <div class="text-center p-6 rounded-lg bg-gray-50 hover-lift">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-lightbulb text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Problem Solving</h3>
+                    <p class="text-gray-600 mb-4">Approaching challenges with creativity and technical expertise to find innovative solutions.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Critical Thinking</li>
+                        <li>• Algorithm Design</li>
+                        <li>• Debugging</li>
+                        <li>• Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values & Philosophy -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">My Values</h2>
+                <p class="text-lg text-gray-600">What drives me in my work and learning</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center hover-lift">
+                    <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-heart text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Passion</h3>
+                    <p class="text-sm text-gray-600">I love what I do and it shows in my work</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center hover-lift">
+                    <div class="w-12 h-12 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-seedling text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Growth</h3>
+                    <p class="text-sm text-gray-600">Always learning and improving my skills</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center hover-lift">
+                    <div class="w-12 h-12 mx-auto mb-4 bg-purple-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-users text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Collaboration</h3>
+                    <p class="text-sm text-gray-600">Great things happen when we work together</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center hover-lift">
+                    <div class="w-12 h-12 mx-auto mb-4 bg-orange-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-star text-orange-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Excellence</h3>
+                    <p class="text-sm text-gray-600">Striving for the highest quality in everything</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-blue-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Let's Work Together</h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                I'm always excited to collaborate on new projects and learn from others in the field.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="projects.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                    View My Projects
+                </a>
+                <a href="contact.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-xl font-semibold mb-4">Shubham Mitra</h3>
+                <p class="text-gray-400 mb-4">Frontend Developer & UI/UX Designer</p>
+                <div class="flex justify-center space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                </div>
+                <p class="text-gray-500 text-sm mt-4">&copy; 2024 Shubham Mitra. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
