@@ -78,7 +78,7 @@ export default function About() {
           {/* What I Do */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 30 }}
             transition={{ duration: 0.8 }}
             className="mb-16"
           >
@@ -109,7 +109,7 @@ export default function About() {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.2 }}
-                  whileHover={{ scale: 1.05, y: -5 }}
+                  whileHover={{ scale: 1.01, y: -5 }}
                   className="card hover:border-blue-500/50 transition-all duration-300 group"
                 >
                   <div className={`w-16 h-16 bg-gradient-to-r ${item.color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>

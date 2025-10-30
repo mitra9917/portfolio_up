@@ -242,7 +242,7 @@ export default function Contact() {
                       href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-12 h-12 card flex items-center justify-center hover:border-blue-400 hover:text-blue-400 transition-all duration-300"
+                      className="w-16 h-16 card flex items-center justify-center hover:border-blue-400 hover:text-blue-400 transition-all duration-300"
                       aria-label={social.label}
                     >
                       <social.icon className="w-5 h-5" />
