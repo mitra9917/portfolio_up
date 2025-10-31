@@ -21,14 +21,24 @@ export default function Resume() {
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               My <span className="gradient-text">Resume</span>
             </h1>
+
             <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-8">
               A comprehensive overview of my education, experience, and achievements
             </p>
-            <button className="btn-primary inline-flex items-center">
+
+            {/* Download Resume Button */}
+            <a
+              href="/assets/myCV.pdf" // 👉 Replace this with your actual resume link
+              target="_blank"              // 👉 Opens the resume in a new tab
+              rel="noopener noreferrer"    // 🔒 Security best practice
+              download                     // 💾 Triggers browser download
+              className="btn-primary inline-flex items-center"
+            >
               <Download className="w-5 h-5 mr-2" />
               Download Resume
-            </button>
+            </a>
           </motion.div>
+
 
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Education */}
@@ -49,19 +59,19 @@ export default function Resume() {
                 {[
                   {
                     degree: 'Bachelor of Technology in Computer Science',
-                    school: 'Your University',
-                    period: '2023 - Present',
-                    location: 'Your City, Country',
-                    gpa: 'CGPA: 9.2',
+                    school: 'VIT CHENNAI',
+                    period: '2024 - Present',
+                    location: 'Chennai, India',
+                    gpa: 'CGPA: 8.87',
                     description: 'Currently pursuing my undergraduate degree with focus on software development, algorithms, and computer science fundamentals.'
                   },
                   {
                     degree: 'Higher Secondary Education',
-                    school: 'Your School',
-                    period: '2021 - 2023',
-                    location: 'Your City, Country',
-                    gpa: 'Percentage: 95.6%',
-                    description: 'Completed with distinction, focusing on science and mathematics.'
+                    school: 'Hartmann College (ICSE affiliated)',
+                    period: '2020 - 2022',
+                    location: 'Bareilly, India',
+                    gpa: 'Percentage: 87.6%',
+                    description: 'focusing on science and mathematics.'
                   }
                 ].map((edu, index) => (
                   <motion.div
@@ -107,21 +117,21 @@ export default function Resume() {
 
               <div className="space-y-6">
                 {[
+                  // {
+                  //   title: 'Frontend Developer Intern',
+                  //   company: 'Tech Company',
+                  //   period: 'Summer 2024',
+                  //   location: 'Remote',
+                  //   description: 'Developed responsive web applications using React and modern JavaScript. Collaborated with design team to implement UI/UX designs.',
+                  //   achievements: ['Built 3+ web applications', 'Improved user experience by 40%', 'Collaborated with cross-functional teams']
+                  // },
                   {
-                    title: 'Frontend Developer Intern',
-                    company: 'Tech Company',
-                    period: 'Summer 2024',
-                    location: 'Remote',
-                    description: 'Developed responsive web applications using React and modern JavaScript. Collaborated with design team to implement UI/UX designs.',
-                    achievements: ['Built 3+ web applications', 'Improved user experience by 40%', 'Collaborated with cross-functional teams']
-                  },
-                  {
-                    title: 'Freelance Web Developer',
+                    title: 'Freelance Frontend Developer',
                     company: 'Self-Employed',
-                    period: '2023 - Present',
+                    period: '2025 - Present',
                     location: 'Remote',
                     description: 'Creating custom websites and web applications for small businesses and individuals.',
-                    achievements: ['Completed 10+ projects', 'Maintained 100% client satisfaction', 'Developed custom solutions']
+                    achievements: [/*'Completed 10+ projects', 'Maintained 100% client satisfaction', */'Developed custom solutions']
                   }
                 ].map((exp, index) => (
                   <motion.div
@@ -167,47 +177,47 @@ export default function Resume() {
               <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mr-4">
                 <Award className="w-6 h-6 text-white" />
               </div>
-              <h2 className="text-2xl font-bold text-white">Certifications & Achievements</h2>
+              <h2 className="text-2xl font-bold text-white">Key Knowledege learnt</h2>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 {
                   title: 'Web Development Fundamentals',
-                  issuer: 'Online Platform',
+                  issuer: 'Online Platform-YT-SuperSimpleDev',
                   date: '2024',
                   description: 'Comprehensive course covering HTML, CSS, JavaScript, and modern web development practices.'
                 },
                 {
                   title: 'React Development',
-                  issuer: 'Tech Academy',
-                  date: '2024',
+                  issuer: 'Online Platform-YT-SuperSimpleDev',
+                  date: '2025',
                   description: 'Advanced React concepts including hooks, state management, and component architecture.'
                 },
                 {
                   title: 'UI/UX Design Principles',
-                  issuer: 'Design Institute',
-                  date: '2023',
+                  issuer: 'Figma',
+                  date: '2025',
                   description: 'User-centered design principles, wireframing, prototyping, and design thinking methodology.'
                 },
                 {
                   title: 'Academic Excellence',
-                  issuer: 'University',
-                  date: '2023',
+                  issuer: 'VIT University',
+                  date: '2024',
                   description: 'Recognition for outstanding academic performance and leadership in computer science studies.'
                 },
-                {
-                  title: 'Hackathon Winner',
-                  issuer: 'Tech Competition',
-                  date: '2023',
-                  description: 'First place in university hackathon for innovative web application development.'
-                },
-                {
-                  title: 'Open Source Contributor',
-                  issuer: 'GitHub',
-                  date: '2023 - Present',
-                  description: 'Active contributor to open source projects, helping improve developer tools and libraries.'
-                }
+                // {
+                //   title: 'Hackathon Winner',
+                //   issuer: 'Tech Competition',
+                //   date: '2023',
+                //   description: 'First place in university hackathon for innovative web application development.'
+                // },
+                // {
+                //   title: 'Open Source Contributor',
+                //   issuer: 'GitHub',
+                //   date: '2023 - Present',
+                //   description: 'Active contributor to open source projects, helping improve developer tools and libraries.'
+                // }
               ].map((cert, index) => (
                 <motion.div
                   key={cert.title}

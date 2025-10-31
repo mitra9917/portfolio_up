@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import emailjs from 'emailjs-com'; // ✅ added import
 import Navigation from '@/components/Navigation';
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Send, CheckCircle } from 'lucide-react';
 
@@ -15,18 +16,34 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
+  // ✅ Updated handleSubmit with EmailJS integration
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    
-    setTimeout(() => setIsSubmitted(false), 3000);
+
+    try {
+      await emailjs.send(
+        'service_2vpbw8u',   // replace with your EmailJS service ID
+        'template_m9lydm7',  // replace with your EmailJS template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        'CE5YvNdYg7ZzU3zrd'    // replace with your EmailJS public key
+      );
+
+      // ✅ Reset and success animation
+      setFormData({ name: '', email: '', subject: '', message: '' });
+      setIsSubmitted(true);
+      setTimeout(() => setIsSubmitted(false), 3000);
+    } catch (error) {
+      console.error('❌ Email sending failed:', error);
+      alert('Failed to send message. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -41,7 +58,7 @@ export default function Contact() {
       icon: Mail,
       title: 'Email',
       value: 'work.shubham.dev@gmail.com',
-      description: 'I\'ll get back to you within 24 hours',
+      description: "I'll get back to you within 24 hours",
       color: 'from-blue-500 to-cyan-500'
     },
     {
